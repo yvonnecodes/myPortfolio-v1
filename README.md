@@ -3,7 +3,7 @@
 
 Hi there! 
 
-Thanks for checking out my repository! This is my first version of my personal portfolio and it includes projects that I have been working on. 
+Thanks for checking out my repository! This is my first version of my personal portfolio and it includes projects that I have been working on. I am currently still working on this.
 
 
 
@@ -16,3 +16,4 @@ Thanks for checking out my repository! This is my first version of my personal p
 * Css3
 * Grid layout
 * JavaScript
+
