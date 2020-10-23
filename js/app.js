@@ -23,7 +23,7 @@ function setTheme(mode){
   if(mode == 'light') {
     document.getElementById('theme-style').href = './css/style.css'
   }
-  if(mode == 'blue') {
+  if(mode == 'black') {
     document.getElementById('theme-style').href = './css/color-1.css'
   }
   if(mode == 'green') {

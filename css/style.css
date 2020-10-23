@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&family=Roboto+Slab:wght@100;300;400;500;600&display=swap');
-/*===== General Styling ======*/
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@100;300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sanchez&display=swap');
+/*===========================
+ 			General Styling
+  ============================ */
+
+
 a {
 	text-decoration: none;
 	color: #17a2b8;
@@ -13,6 +18,16 @@ body * {
 	transition: 0.3s;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
+.title-1 {
+	font-family: 'Righteous', cursive;
+}
+
+
+
 /* Container Styling */
 .main-container {
 	width: 1200px;
@@ -21,15 +36,18 @@ body * {
 
 /* Main Colors */
 :root {
-	--mainColor: #eaeaea;
+	--mainColor: background-color: #b8c6db;
+               background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
 	--secondaryColor: #fff;
-	--borderColor: #c1c1c1;
-	--mainText: #4b5156;
-	--secondaryText: #4b5156;
+	--borderColor: #616161;
+	--mainText: #231F20;
+	--secondaryText: #231F20;
 	--themeDotBorder: #24292e;
 	--previewBg: rgb(251, 249, 243, 0.8);
-	--previewShadow:#f0ead6;
-	--buttonColor: black;
+	--previewShadow:#DAD9D5;
+	--buttonColor: #2098D1;
+	--hoverColor: #414141;
+	--hoverText: #fff;
 }
 
 /* Element Styling */
@@ -40,14 +58,14 @@ html, body {
 
 h1, h2, h3, h4, h5, h6, strong {
 	color: var(--mainText);
-	font-family: 'Raleway', sans-serif;
-	font-weight: 500;
+	font-family: 'Cousine', monospace;
+	font-weight: 400;
 
 }
 
 p, li, span, label, input, textarea {
 		color: var(--secondaryText);
-		font-family: 'Roboto Slab', serif;
+	  font-family: 'Sanchez', serif;
 }
 
 /* Font Styling */
@@ -59,7 +77,9 @@ h5 {font-size: 20px;}
 h6 {font-size: 16px;}
 
 
-/*====== Title Section ======*/
+/*==========================
+			Title Section
+  =========================== */
 
 /* Font Styling of Title */
 .section-1 {
@@ -83,7 +103,9 @@ h6 {font-size: 16px;}
 	min-height: 10em;
 }
 
-/*==== Navigation Section =====*/
+/*========================
+		Navigation Section
+  ========================= */
 .intro-wrapper {
 	background-color: var(--secondaryColor);
 	border: 1px solid var(--borderColor);
@@ -99,28 +121,13 @@ h6 {font-size: 16px;}
 }
 
 .nav-wrapper {
-	grid-area:nav-wrapper;
+	grid-area: nav-wrapper;
 	border-bottom: 1px solid var(--borderColor);
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	background-color: var(--mainColor);
 	border-radius:5px 5px 0 0;
-}
-
-#navigation {
-	margin: 0;
-	padding: 10px;
-}
-
-#navigation li {
-	display: inline-block;
-	margin-right: 5px;
-	margin-left: 5px;
-}
-
-#navigation a {
-	color: var(--mainText);
 }
 
 .left-column {
@@ -135,6 +142,24 @@ h6 {font-size: 16px;}
 	align-content: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
+}
+
+
+
+/* Contact button Navigation */
+#navigation {
+	margin: 0;
+	padding: 10px;
+}
+
+#navigation li {
+	display: inline-block;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#navigation a {
+	color: #fff;
 }
 
 /* Navigation Dots Styling */
@@ -164,10 +189,12 @@ h6 {font-size: 16px;}
 	-webkit-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	-moz-box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
 	box-shadow: -1px 1px 3px -1px rgba(0,0,0,0.75);
-
 }
 
-/* ====== Profile Pic Styling ===== */
+
+/* ======================
+		Profile Pic Styling
+   ====================== */
 #profile_pic {
 	display: block;
 	margin: 0 auto;
@@ -204,19 +231,21 @@ h6 {font-size: 16px;}
 	background-color: #fff;
 }
 
-#blue-mode {
-	background-color: #192734;
+#black-mode {
+	background-color: #000000;
 }
 
 #green-mode {
-	background-color: #78866b;
+	background-color: #003B46;
 }
 
 #purple-mode {
 	background-color: #7E4C74;
 }
 
-/* ====== Preview Section ===== */
+/* =================
+		Preview Section
+   =================== */
 #settings-note {
 	font-size: 12px;
 	font-style: italic;
@@ -233,7 +262,7 @@ h6 {font-size: 16px;}
 
 #preview {
 	width: 300px;
-	border: 1.5px solid #17a2b8;
+	border: 1.5px solid #5B5150;
 	background-color: var(--previewBg);
 	padding: 15px;
 	position: relative;
@@ -243,7 +272,7 @@ h6 {font-size: 16px;}
 	width: 7px;
 	height: 7px;
 	border-radius: 50%;
-	border: 1.5px solid #17a2b8;
+	border: 1.5px solid #5B5150;
 	background-color: #fff;
 	position: absolute;
 }
@@ -268,7 +297,40 @@ h6 {font-size: 16px;}
 	left: -5px;
 }
 
-/* ===== About Me Section ====*/
+/*Portfolio Button */
+
+.cta {
+  display: inline-block;
+  padding: 10px 10px;
+  color: #fff;
+	background-color: var(--buttonColor);
+	font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+  margin-top: 10px;
+  transition: .3s ease;
+  transition-property: background-color, color;
+
+}
+
+.cta:hover {
+  color: var(--hoverText);
+  background-color: var(--hoverColor);
+}
+
+.btn-1 {
+	margin-left: 30%;
+}
+
+.btn-2 {
+	margin-left: 15%;
+}
+
+
+
+/* ======================
+			About Me Section
+   =======================*/
 .about-wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -288,7 +350,9 @@ h6 {font-size: 16px;}
 	background-color: var(--previewShadow);
 }
 
-/*======= Services Section ======*/
+/*=====================
+		Services Section
+	====================== */
 .grid-item {
 	display: inline-block;
 	width: 200px;
@@ -302,7 +366,9 @@ h6 {font-size: 16px;}
 	margin: 0 auto;
 }
 
-/*======== Portfolio Section =========*/
+/*========================
+		Portfolio Section
+	======================== */
 .post-wrapper {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, 320px);
@@ -340,7 +406,9 @@ h6 {font-size: 16px;}
 	font-size: 14px;
 }
 
-/* ======= Contact Form ========= */
+/* =====================
+  		Contact Form
+	 ====================== */
 #contact-form {
 	display: block;
 	max-width: 600px;
@@ -350,6 +418,9 @@ h6 {font-size: 16px;}
 	border-radius: 5px;
 	background-color: var(--mainColor);
 	margin-bottom: 50px;
+	-webkit-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	-moz-box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
+	box-shadow: -2px 7px 21px -9px rgba(0,0,0,0.75);
 }
 
 #contact-form label {
@@ -372,6 +443,7 @@ h6 {font-size: 16px;}
 }
 
 #submit-btn {
+	cursor: pointer;
 	margin-top: 10px;
 	width: 100%;
 	padding-top: 10px;
@@ -379,9 +451,152 @@ h6 {font-size: 16px;}
 	color: #fff;
 	background-color: var(--buttonColor);
 	border: none;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: .1rem;
+
 }
 
-/* ==== Media Query ==== */
+#submit-btn:hover {
+	background-color: var(--hoverColor);
+	color: var(--hoverText);
+}
+
+
+/* ======================
+			Arrow-Up Button
+   ====================== */
+	 #back-to-top-btn {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   font-size: 26px;
+   width: 50px;
+   height: 50px;
+   background-color: #fff;
+   color: #333;
+   cursor: pointer;
+   outline: none;
+   border: 3px solid #333;
+   border-radius: 50%;
+   transition-duration: 0.2s;
+   transition-timing-function: ease-in-out;
+   transition-property: background-color, color;
+ }
+ #back-to-top-btn:hover, #back-to-top-btn:focus {
+   background-color: #333;
+   color: #fff;
+ }
+
+/* ======================
+				Footer
+   ====================== */
+.social {
+	   width: 100%;
+	   margin: 0 auto;
+	   text-align: center;
+	   margin-top: 50px;
+	 }
+
+.social .links {
+  font-size: 22px;
+  width: 45px;
+  height: 45px;
+  line-height: 39px;
+  display: inline-block;
+  margin: 10px;
+  color: #fff;
+}
+
+.social .links:hover{
+  opacity: 0.9;
+  box-shadow: 0px 1px 3px 2px rgba(255, 255, 255, 0.9);
+}
+
+.copyright {
+	color: var(--mainText);
+  text-align: center;
+  padding-top: 24px;
+	margin-left: 2%;
+  font-weight: 300;
+  opacity: 0.8;
+  font-size: 16px;
+}
+
+.fa-linkedin  {
+	color: var(--mainText);
+}
+
+ .fa-github {
+	 color: var(--mainText);
+ }
+
+.fa-codepen {
+	color: var(--mainText);
+}
+
+.fa-envelope-open-text {
+		color: var(--mainText);
+}
+
+
+/* ======================
+				Animations
+   ====================== */
+
+/* Animations */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+
+/* fadeInUp */
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+/* fadeOutDown */
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+@keyframes navLinkFade {
+	from {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+	to {
+		opacity: 1;
+		transform: translateX(0px);
+	}
+}
+
+
+/* =====================
+			Media Query
+	 ====================== */
 
 /* Desktop */
 @media screen and (max-width: 1200px){
@@ -390,7 +605,23 @@ h6 {font-size: 16px;}
 	}
 }
 
-/* Mobile */
+/* Tablet */
+@media screen and (max-width: 1024px) {
+.nav-links {
+	width: 60%;
+	margin-top: 4%;
+}
+
+@media(max-width: 992px) {
+	#back-to-top-btn {
+	font-size: 22px;
+	width: 40px;
+	height: 40px;
+	bottom: 15px;
+	right: 15px;
+	}
+}
+
 @media screen and (max-width: 800px){
 	.intro-wrapper {
 		grid-template-columns: 1fr;
@@ -402,7 +633,36 @@ h6 {font-size: 16px;}
 		.right-column {
 			justify-content: center;
 		}
+		.social{
+		padding-right: 30%;
 	}
+	.links {
+		margin-left: 5%;
+	}
+
+	.title-1 {
+		padding-right: 10%;
+		padding-left: 10%;
+	}
+}
+
+/* Mobile */
+@media(max-width:768px) {
+ #back-to-top-btn {
+ font-size: 18px;
+ width: 32px;
+ height: 32px;
+ bottom: 6px;
+right: 6px;
+	}
+	.right-column {
+		margin-top: -60px;
+		margin-bottom: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+
 
 	/* Smaller Screens */
 @media screen and (max-width: 400px){
@@ -412,8 +672,8 @@ h6 {font-size: 16px;}
 		padding-left: 10px;
 		padding-top: 10px;
 	}
-
-	#preview{
+#preview{
 		width: 280px;
 	}
+
 }
