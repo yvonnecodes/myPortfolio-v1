@@ -1,11 +1,23 @@
 # My Personal Portfolio version 1 :computer:
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 Hi there! 
 
-Thanks for checking out my repository! This is my first version of my personal portfolio and it includes projects that I have been working on. I am currently still working on this.
+Thanks for checking out my repository! This is my "demo personal website" to add to my portfolio. The Projects section is a mockup for demonstration purposes (the code and demo buttons under the projects will not work).  
 
 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+![](images/yvonnecodes.jpg)
+https://yvonnecodes.netlify.app/
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # What I Used:
 
