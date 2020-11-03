@@ -1,5 +1,6 @@
 # My Personal Portfolio version 1 :computer:
 
+<br>
 
 Hi there! 
 
@@ -11,6 +12,8 @@ Thanks for checking out my repository! This is my "demo personal website" to add
 
 <br>
 <br>
+
+<b>Check Out Website</b>
 
 ```sh
    
