@@ -17,8 +17,7 @@ Thanks for checking out my repository! This is my "demo personal website" to add
 
 ```sh
    
-
-https://yvonnecodes.netlify.app/
+ https://yvonnecodes.netlify.app/
 
    ```
 
