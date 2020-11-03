@@ -7,7 +7,7 @@ Hi there!
 Thanks for checking out my repository! This is my "demo personal website" to add to my portfolio. The Projects section is a mockup for demonstration purposes (the code and demo buttons under the projects will not work).  
 
 
-![](portfolio_1.gif)
+![](portfolioV_1.gif)
 
 <br>
 <br>
